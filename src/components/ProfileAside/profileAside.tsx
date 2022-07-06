@@ -6,7 +6,9 @@ import { AsideRoot, Nickname, Title } from "./profileAside.styled";
 const ProfileAside = () => {
   return (
     <AsideRoot component="aside">
-      <Avatar src="https://i.ibb.co/GsMRb0Y/Hisoka.jpg" size="larger" />
+      <Box marginBottom={2}>
+        <Avatar src="https://i.ibb.co/GsMRb0Y/Hisoka.jpg" size="larger" />
+      </Box>
 
       <Box marginBottom={2}>
         <Title>Nhân Phan</Title>
@@ -14,8 +16,8 @@ const ProfileAside = () => {
       </Box>
 
       <Typography fontSize={12} lineHeight={1.5} marginBottom={2}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
+        A digital storyteller through the website and javascript is my favorite
+        programming language
       </Typography>
 
       <Typography

@@ -25,22 +25,22 @@ export const Parallax = styled("g")(() => ({
   "& > use": {
     animation: "wave 25s cubic-bezier(.55, .5, .45, .5) infinite",
 
-    "&:nth-child(1)": {
+    "&:nth-of-type(1)": {
       animationDelay: "-2s",
       animationDuration: "7s",
       fill: "rgba(253,253,253,0.7)",
     },
-    "&:nth-child(2)": {
+    "&:nth-of-type(2)": {
       animationDelay: "-3s",
       animationDuration: "10s",
       fill: "rgba(253,253,253,0.5)",
     },
-    "&:nth-child(3)": {
+    "&:nth-of-type(3)": {
       animationDelay: "-4s",
       animationDuration: "13s",
       fill: "rgba(253,253,253,0.3)",
     },
-    "&:nth-child(4)": {
+    "&:nth-of-type(4)": {
       animationDelay: "-5s",
       animationDuration: "20s",
       fill: "#fdfdfd",

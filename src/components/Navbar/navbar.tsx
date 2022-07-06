@@ -1,3 +1,5 @@
+import { Box, Typography } from "@mui/material";
+import Nav from "components/Nav/nav";
 import React, { ReactElement } from "react";
 import {
   NavbarRoot,
@@ -8,16 +10,21 @@ import {
 
 type NavbarProps = {
   logo?: ReactElement | string;
-  children: ReactElement;
 };
 
-const Navbar = ({ logo, children }: NavbarProps) => {
+const Navbar = ({ logo }: NavbarProps) => {
   return (
     <NavbarRoot>
       <NavbarContainer>
         <BrandPlaceholder>{logo}</BrandPlaceholder>
 
-        <NavPlaceholder>{children}</NavPlaceholder>
+        <NavPlaceholder>
+          <Nav />
+
+          <Box display="flex" alignItems="center" marginLeft="auto" gap={1}>
+            <Typography component="span">Find me on</Typography>
+          </Box>
+        </NavPlaceholder>
       </NavbarContainer>
     </NavbarRoot>
   );

@@ -8,7 +8,7 @@ const Nav = () => {
 
   return (
     <NavRoot>
-      <NavItem activated={asPath === "/"}>
+      <NavItem state={asPath === "/" ? "activated" : null}>
         <Router href="/" passHref>
           <NavLink>
             <img src="/icons/overview.svg" alt="overview" />
@@ -17,7 +17,7 @@ const Nav = () => {
         </Router>
       </NavItem>
 
-      <NavItem activated={asPath.startsWith("/projects")}>
+      <NavItem state={asPath.startsWith("/projects") ? "activated" : null}>
         <Router href="/projects" passHref>
           <NavLink>
             <img src="/icons/projects.svg" alt="overview" />
@@ -27,7 +27,7 @@ const Nav = () => {
         </Router>
       </NavItem>
 
-      <NavItem activated={asPath.startsWith("/contact-me")}>
+      <NavItem state={asPath.startsWith("/contact-me") ? "activated" : null}>
         <Router href="/contact-me" passHref>
           <NavLink>
             <img src="/icons/contact.svg" alt="overview" />

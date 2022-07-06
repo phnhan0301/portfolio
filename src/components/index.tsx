@@ -6,3 +6,7 @@ export * from "./ProfileAside";
 export * from "./Avatar";
 export * from "./Footer";
 export * from "./Copyright";
+export * from "./Breadcrumbs";
+export * from "./ProjectItem";
+export * from "./LangSwitcher";
+export * from "./Blockquote";

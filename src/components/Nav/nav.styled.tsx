@@ -2,7 +2,7 @@ import { Link, styled } from "@mui/material";
 import { MUIStyledCommonProps } from "@mui/system";
 
 interface NavItemProps extends MUIStyledCommonProps {
-  activated?: boolean;
+  state?: "activated" | null;
 }
 
 export const NavRoot = styled("ul")(() => ({
@@ -13,13 +13,13 @@ export const NavRoot = styled("ul")(() => ({
   gap: "16px",
 }));
 
-export const NavItem = styled("li")(({ activated, theme }: NavItemProps) => ({
+export const NavItem = styled("li")(({ state, theme }: NavItemProps) => ({
   paddingTop: "8px",
   paddingBottom: "8px",
   position: "relative",
   transition: "all 0.3s ease-in-out",
 
-  ...(activated && {
+  ...(state == "activated" && {
     "&::after": {
       position: "absolute",
       content: "''",

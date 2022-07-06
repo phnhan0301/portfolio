@@ -1,30 +1,24 @@
-import { Box, Typography } from "@mui/material";
 import type { AppLayout } from "app/types";
-import { Footer, Header, Nav, Navbar, ProfileAside, Waves } from "components";
+import { Footer, Header, Navbar, ProfileAside } from "components";
 import React from "react";
-import { AsideRoot, MainRoot, PageLayout, Wrapper } from "./MainLayout.styed";
+import {
+  AsidePlaceholder,
+  MainRoot,
+  PageLayout,
+  Wrapper,
+} from "./MainLayout.styed";
 
 const MainLayout: AppLayout = ({ children }) => {
   return (
     <PageLayout>
-      <Header>
-        <Waves />
-      </Header>
+      <Header />
 
-      <Navbar>
-        <>
-          <Nav />
-
-          <Box display="flex" alignItems="center" marginLeft="auto" gap={1}>
-            <Typography component="span">Find me on</Typography>
-          </Box>
-        </>
-      </Navbar>
+      <Navbar />
 
       <Wrapper>
-        <AsideRoot>
+        <AsidePlaceholder>
           <ProfileAside />
-        </AsideRoot>
+        </AsidePlaceholder>
 
         <MainRoot>{children}</MainRoot>
       </Wrapper>

@@ -1,5 +1,5 @@
-import { Container, Divider } from "@mui/material";
-import { Copyright } from "components";
+import { Box, Container, Divider } from "@mui/material";
+import { Copyright, LangSwitcher } from "components";
 import React from "react";
 import { FooterRoot } from "./footer.styled";
 
@@ -8,7 +8,9 @@ const Footer = () => {
     <FooterRoot>
       <Container>
         <Divider sx={{ marginBottom: 3 }} />
-        <Copyright />
+        <Box display="flex" alignItems="center">
+          <Copyright />
+        </Box>
       </Container>
     </FooterRoot>
   );

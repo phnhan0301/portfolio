@@ -20,9 +20,11 @@ export const Wrapper = styled(Container)(() => ({
 
 export const MainRoot = styled(MainBox)<{ children: ReactElement }>(() => ({
   gridArea: "main",
+  paddingTop: "24px",
+  paddingBottom: "24px",
 }));
 
-export const AsideRoot = styled(Box)(() => ({
+export const AsidePlaceholder = styled(Box)(() => ({
   gridArea: "aside",
-  transform: "translateY(-78px)",
+  marginTop: "-78px",
 }));
