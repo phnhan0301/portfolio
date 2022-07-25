@@ -1,4 +1,4 @@
-import { alpha, hexToRgb, ThemeOptions } from "@mui/material";
+import { alpha, ThemeOptions } from "@mui/material";
 
 const baseThemeOptions: ThemeOptions = {
   components: {

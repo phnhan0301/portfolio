@@ -2,7 +2,7 @@ import { styled } from "@mui/material";
 
 export const HeaderRoot = styled("header")(() => ({
   height: "350px",
-  background: '#fff url("/images/header_bg.png") no-repeat center center',
+  background: '#fff url("/images/header-bg.png") no-repeat center center',
   display: "flex",
   position: "relative",
   zIndex: "0",

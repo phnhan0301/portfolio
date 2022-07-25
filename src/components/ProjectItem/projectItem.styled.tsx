@@ -1,4 +1,4 @@
-import { styled } from "@mui/material";
+import { ListItem as MuiListItem, styled } from "@mui/material";
 
 export const ProjectItemRoot = styled("article")(() => ({
   width: "100%",
